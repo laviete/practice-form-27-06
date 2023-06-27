@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="form" action="/test-direction" method="GET">
+      <h2>Реєстрація</h2>
+
+      <label class="column">
+        Ім'я:
+        <input type="text" placeholder="Вадим" name="username" autofocus/>
+      </label>
+
+      <label class="column">
+        Електронна пошта:
+        <input type="email" placeholder="example@gmail.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
+      </label>
+
+      <label class="column">
+        Пароль:
+        <input type="password" placeholder="12345" name="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"/>
+      </label>
+
+      <label class="column">
+        Телефон:
+        <input type="text" placeholder="0994875963" name="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"/>
+      </label>
+
+      <label class="column">
+        Адреса:
+        <input type="text" placeholder="вул.Барнаульська, б.24-А" name="adress"/>
+      </label>
+
+      <label class="column">
+        Дата народження:
+        <input type="date" placeholder="14.09.2005" name="date"/>
+      </label>
+<div class="row">
+  <button type="submit">Зареєструватися</button>
+      <button type="reset">Очистити</button>
+</div>
+      
+    </form>
+  </body>
+</html>
